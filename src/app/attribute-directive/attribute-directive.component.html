@@ -1,0 +1,24 @@
+<!-- <p appColorchange>Test</p>
+<p appColorchange>Test1</p>
+<p appColorchange>Test2</p> -->
+
+   <mat-radio-group  >
+    <label>Select a color:</label>
+  <mat-radio-button #item ngModel class="rbtn" name="color" value="red" (click)="color='red'">Red</mat-radio-button>
+  <mat-radio-button #item1 ngModel  class="rbtn"name="color" value="green" (click)="color='green'">Green</mat-radio-button>
+  <mat-radio-button #item2 ngModel class="rbtn" name="color" value="blue" (click)="color='blue'">Blue</mat-radio-button>
+</mat-radio-group>
+
+<br><br>
+<br><br>
+
+<p > selected color is: {{color}}</p>
+
+<br>
+
+    <p class="p"[appColorchange]="color">Test</p>
+
+
+
+
+
